@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://frankgp.com/component/stat.js" type="module"></script>
     <script src="https://frankgp.com/component/layout.js" type="module"></script>
     <title>Dashboard</title>
   </head>
@@ -17,18 +18,54 @@
     <% } %>
 
     <main>
-      <h2>modulo 1 lecture 2</h2>
-      <iframe src="https://drive.google.com/file/d/1-FuNe38zprLSSyJH0n_sZk0m66h3dKDM/preview" allow="autoplay"></iframe>
-      <style>
-        iframe {
-          aspect-ratio: 16/9;
-          border: 1px solid #000;
-          width: 100%;
-        }
-        main {
-          margin: 0;
-        }
-      </style>
+      <section>
+        <article>
+          <h2>MODULO 1 - LECTURE 1</h2>
+          <iframe src="https://drive.google.com/file/d/1W3CtfgkiMF7zWNNGf6-vN-ja1WqJUpYb/preview" allow="autoplay"></iframe>
+        </article>
+        <article>
+          <h2>MODULO 1 - LECTURE 2</h2>
+          <p>servidor One Drive</p>
+          <!-- <base href="https://frankgp123456789012345.on.drv.tw/" /> -->
+          <video class="no-right-click" controls controlsList="nodownload">
+            <source src="https://frankgp123456789012345.on.drv.tw/media/m1-l2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <style>
+            video {
+              max-width: 100%;
+            }
+          </style>
+          <script>
+            // Get all video elements with the class 'no-right-click'
+            var videos = document.querySelectorAll(".no-right-click");
+
+            // Loop through each video element and disable the right-click context menu
+            videos.forEach(function (video) {
+              video.addEventListener("contextmenu", function (e) {
+                e.preventDefault();
+              });
+            });
+          </script>
+        </article>
+
+        <article>
+          <h2>MODULO 1 - LECTURE 2</h2>
+          <p>servidor Google Drive</p>
+
+          <iframe src="https://drive.google.com/file/d/1-FuNe38zprLSSyJH0n_sZk0m66h3dKDM/preview" allow="autoplay"></iframe>
+          <style>
+            iframe {
+              aspect-ratio: 16/9;
+              border: 1px solid #000;
+              width: 100%;
+            }
+            main {
+              margin: 0;
+            }
+          </style>
+        </article>
+      </section>
     </main>
   </body>
 </html>
