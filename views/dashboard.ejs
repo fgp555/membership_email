@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://frankgp.com/component/layout.js" type="module"></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <% if (userEmail) { %>
+    <h1>Welcome, <%= userEmail %>!</h1>
+    <p><a class="btn" href="/logout">Logout</a></p>
+    <% } else { %>
+    <h1>Dashboard</h1>
+    <p>Please login to access the dashboard.</p>
+    <p><a class="btn" href="/">Login</a></p>
+    <% } %>
+
+    <main>
+      <h2>modulo 1 lecture 2</h2>
+      <iframe src="https://drive.google.com/file/d/1-FuNe38zprLSSyJH0n_sZk0m66h3dKDM/preview" allow="autoplay"></iframe>
+      <style>
+        iframe {
+          aspect-ratio: 16/9;
+          border: 1px solid #000;
+          width: 100%;
+        }
+        main {
+          margin: 0;
+        }
+      </style>
+    </main>
+  </body>
+</html>

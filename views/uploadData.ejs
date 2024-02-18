@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Data</title>
+    <script src="https://frankgp.com/component/layout.js" type="module"></script>
+  </head>
+  <body>
+    <h1>Upload Data</h1>
+    <form action="/admin/upload" method="post" enctype="multipart/form-data">
+      <label for="file">Select File:</label>
+      <input type="file" id="file" name="file" accept=".json" required />
+      <button type="submit">Upload</button>
+      <br>
+      <a class="btn" href="/admin">admin</a>
+    </form>
+  </body>
+</html>

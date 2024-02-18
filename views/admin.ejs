@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <script src="https://frankgp.com/component/layout.js" type="module"></script>
+  </head>
+  <body>
+    <h1>Admin Panel</h1>
+    <ul>
+      <% users.forEach(user => { %>
+      <li><%= user %> <a class="btn" href="/admin/delete/<%= user %>">Delete</a></li>
+      <% }); %>
+    </ul>
+    <form action="/admin/add" method="post">
+      <label for="newUser">Add User:</label>
+      <input type="email" id="newUser" name="newUser" required />
+      <button type="submit">Add</button>
+    </form>
+    <form action="/admin/download" method="get">
+      <button type="submit">Download data.json</button>
+    </form>
+    <div>
+      <a class="btn" href="/admin/upload">upload</a>
+    </div>
+  </body>
+</html>
